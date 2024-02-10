@@ -29,5 +29,5 @@ jobs:
           name: WordFinder-CI
           path: |
             libs
-            Release/WordFinder.exe
-            x64/Release/WordFinder.exe
+            jni/Release/WordFinder.exe
+            jni/x64/Release/WordFinder.exe
