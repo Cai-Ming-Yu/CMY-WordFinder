@@ -19,7 +19,7 @@ jobs:
         uses: nttld/setup-ndk@v1
         with:
           ndk-version: r26b
-      - name: Set up MSBuild
+      - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
       - name: Build CI Version
         run: cd jni ; ndk-build ; msbuild WordFinder.sln /p:Platform="x64" /p:Configuration="Release" ; msbuild WordFinder.sln /p:Platform="x86" /p:Configuration="Release"
